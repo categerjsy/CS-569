@@ -1,0 +1,112 @@
+input[type=text], select, textarea{
+    font-family: 'Gloria Hallelujah', cursive;
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 55px;
+    box-sizing: border-box;
+    resize: vertical;
+  }
+  
+  /* Style the label to display next to the inputs */
+  label {
+    padding: 12px 12px 12px 0;
+    display: inline-block;
+  }
+  
+  /* Style the submit button */
+  input[type=submit] {
+    font-family: 'Gloria Hallelujah', cursive;
+    background-color: #F4A026;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 55px;
+    cursor: pointer;
+    float: right;
+  }
+  
+  /* Style the number input */
+  .quantity {
+    position: relative;
+  }
+  
+ 
+  .quantity input {
+    font-family: 'Gloria Hallelujah', cursive;
+    width: 75px;
+    height: 42px;
+    line-height: 1.65;
+    float: left;
+    display: block;
+    padding: 0;
+    margin: 0;
+    padding-left: 20px;
+    border-radius: 55px;
+    border: 1px solid #eee;
+  }
+  
+  .quantity input:focus {
+    outline: 0;
+  }
+  
+  .quantity-nav {
+    float: left;
+    position: relative;
+    height: 42px;
+  }
+  
+  .quantity-button {
+    font-family: 'Gloria Hallelujah', cursive;
+    position: relative;
+    cursor: pointer;
+    border-left: 1px solid #eee;
+    width: 20px;
+    text-align: center;
+    color: #333;
+    font-size: 13px;
+    font-family: 'Gloria Hallelujah', cursive;
+    line-height: 1.7;
+    
+  }
+  
+  .quantity-button.quantity-up {
+    position: absolute;
+    height: 50%;
+    top: 0;
+    border-bottom: 1px solid #eee;
+  }
+  
+  .quantity-button.quantity-down {
+    position: absolute;
+    bottom: -1px;
+    height: 50%;
+  }
+  /* Floating column for labels: 25% width */
+  .col-25 {
+    float: left;
+    width: 25%;
+    margin-top: 6px;
+  }
+  
+  /* Floating column for inputs: 75% width */
+  .col-75 {
+    float: left;
+    width: 75%;
+    margin-top: 6px;
+  }
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 600px) {
+    .col-25, .col-75, input[type=submit] {
+      width: 100%;
+      margin-top: 0;
+    }
+  }
